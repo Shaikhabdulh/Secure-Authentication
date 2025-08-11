@@ -1,0 +1,22 @@
+{
+  "realm": "github-lab",
+  "enabled": true,
+  "clients": [
+    {
+      "clientId": "vault-client",
+      "clientIdAlias": "vault-client",
+      "publicClient": false,
+      "secret": "vault-secret",
+      "redirectUris": ["http://localhost:8250/oidc/callback"]
+    }
+  ],
+  "users": [
+    {
+      "username": "dev1",
+      "enabled": true,
+      "credentials": [
+        { "type": "password", "value": "devpass", "temporary": false }
+      ]
+    }
+  ]
+}
